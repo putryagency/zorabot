@@ -1,7 +1,15 @@
 {
+  "build": {
+    "env": {
+      "NODE_ENV": "production"
+    }
+  },
   "functions": {
     "api/zora-listing.js": {
-      "runtime": "edge"
+      "runtime": "vercel-edge@3.0.0"
     }
-  }
+  },
+  "routes": [
+    { "src": "/api/zora-listing", "dest": "/api/zora-listing.js" }
+  ]
 }
