@@ -1,0 +1,15 @@
+{
+  "functions": {
+    "api/zora-listing.js": {
+      "runtime": "edge"
+    }
+  },
+  "cron": {
+    "jobs": [
+      {
+        "path": "/api/zora-listing",
+        "schedule": "*/10 * * * * *"
+      }
+    ]
+  }
+}
